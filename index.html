@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+     body{ 
+        background-color: rgb(113, 95, 212);
+     }
+     h1{
+        color:rgb(253, 250, 252); 
+        font-size: 40px; 
+     }
+        label,option,p{ 
+            font-size: 15px; 
+            color:rgb(10, 9, 9); 
+        } 
+        div{
+              margin-left:400px; 
+              margin-right:400px; 
+              padding:40px; 
+              background-color:pink; 
+        }
+        </style>
+</head>  
+    <body background="b.jpg">
+        <h1 align="center"><b><u>Travel reservation form</u></b></h1> 
+            <div> 
+                <form align="center">
+                    
+                    <label for="name">Full name:*</label><br>
+                    <input type="text" id="name" placeholder="Enter you name" required><br><br>
+                    <lable for="email">Email address:*</lable><br>
+                    <input type="email" id="email" placeholder="Enter you email" required><br></br>
+                    <label for="pwd">Password:*</label><br>
+                    <input type="password" id="pwd"  placeholder="Enter your password" minlength="8" required><br><br>
+                    <label for="phone">Enter a phone number:</label><br><br>
+                    <input type="tel" id="phone" name="phone" placeholder="123-45-678"  required><br><br>
+                    <small>Format: 123-45-678</small><br><br>
+                    <label for="pack">Select Tour Package*</label><br>
+                    <select name="pack" id="pack"> 
+                    <option value="madikeri"> Madikeri</option> 
+                    <option value="mysore">Mysore</option> 
+                    <option value="kodagu">Kodagu</option> 
+                    </select><br><br> 
+                    <label for="date">Annual Date:*</label><br> 
+                    <input type="date" id="date" required><br><br> 
+                    <label for="person">Number of persons:*</label><br> 
+                    <input type="text" id="person" placeholder="Enter no. of persons" required><br><br>
+                    <p><label for="things">What would you like to avail?*</label><br> </p>
+                    <input type="checkbox" name="board" id="things">Boarding</input><br> 
+                    <input type="checkbox" name="food" id="things">Fooding</input><br> 
+                    <input type="checkbox" name="sight" id="things">Sight seeing</input><br><br>
+                    
+                    <label for="discount">Discount Coupon code:</label><br> 
+                    <input type="text" id="discount" placeholder="Enter discount coupon code" required><br><br> 
+                    <p><label for="term">Terms & Conditions:*</label> 
+                    <input type="radio" name="term" id="term">I agree</input> 
+                    <input type="radio" name="term" id="term">I disagree</input></p>
+                    <input type="submit" value="Submit" style="background-color:green;"> 
+                    <input type="reset" value="Reset" style="background-color: brown;"><br> 
+                    
+                </form> 
+            </div> 
+    </body>
+</html>
